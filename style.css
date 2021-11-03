@@ -21,10 +21,27 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
 /* VORES EGEN KODE */
-.gutentor-text {
+.section-g4801c4.gutentor-element-advanced-text .gutentor-text {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
+.main-navigation ul.menu li a,
+.slicknav_menu .slicknav_nav li a {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+/* CHILDTHEME KODE */
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -38,44 +55,19 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   word-wrap: normal !important;
 }
 
-body {
-  color: #333333;
-  font-family: "Zen Kaku Gothic Antique", sans-serif, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #3a3a3a;
-  font-family: "Anton", serif;
-}
-
 .wp-block-quote {
   padding: 30px 30px 30px 50px;
   margin: 30px 0 30px 30px;
 }
 
 .site-header .site-branding .site-title {
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: none;
 }
 
-.main-navigation ul.menu > li > a {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-transform: none;
-}
-
 .section-banner .banner-content .entry-title {
-  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 1.4;
@@ -86,7 +78,6 @@ h6 {
 .post .highlight-posts-content .entry-meta a,
 .feature-post-slider .post-content-wrap .entry-meta a,
 #primary .entry-meta {
-  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.6;
@@ -94,7 +85,6 @@ h6 {
 }
 
 .post .highlight-posts-content .cat-links a {
-  font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 1;
@@ -102,7 +92,6 @@ h6 {
 }
 
 .post .highlight-posts-content .highlight-posts-title {
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
@@ -110,7 +99,6 @@ h6 {
 }
 
 .section-banner .banner-content .entry-text p {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
@@ -118,7 +106,6 @@ h6 {
 }
 
 .feature-posts-content-wrap .feature-posts-content .feature-posts-title {
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.4;
@@ -126,7 +113,6 @@ h6 {
 }
 
 .post .feature-posts-content .cat-links a {
-  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 600;
   line-height: 1;
@@ -134,7 +120,6 @@ h6 {
 }
 
 #primary article .entry-title {
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.4;
@@ -142,7 +127,6 @@ h6 {
 }
 
 .feature-post-slider .post .entry-content .entry-title {
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
@@ -151,7 +135,6 @@ h6 {
 
 .site-footer .site-info,
 .site-footer .footer-menu ul li a {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: none;
@@ -159,14 +142,12 @@ h6 {
 }
 
 .page-title {
-  font-family: "Roboto", sans-serif;
   font-size: 48px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 .sidebar .widget .widget-title {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
