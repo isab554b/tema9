@@ -65,25 +65,7 @@
 		<div class="site-footer-inner" style="background-image: url(<?php echo esc_url( $footer_image ) ?>">
 			<?php if( !get_theme_mod( 'disable_footer_widget', false ) ):
 			 if( gutener_is_active_footer_sidebar() ): ?>
-				<div class="top-footer">
-					<div class="wrap-footer-sidebar">
-						<div class="container">
-							<div class="footer-widget-wrap">
-								<div class="row">
-									<?php if( get_theme_mod( 'top_footer_widget_columns', 'four_columns' ) == '' || get_theme_mod( 'top_footer_widget_columns', 'four_columns' ) == 'four_columns' ){
-										get_template_part( 'template-parts/footer/footer-widget', 'one' );
-									}elseif( get_theme_mod( 'top_footer_widget_columns', 'four_columns' ) == 'three_columns' ){
-										get_template_part( 'template-parts/footer/footer-widget', 'two' );
-									}elseif( get_theme_mod( 'top_footer_widget_columns', 'four_columns' ) == 'two_columns' ){
-										get_template_part( 'template-parts/footer/footer-widget', 'three' );
-									}elseif( get_theme_mod( 'top_footer_widget_columns', 'four_columns' ) == 'one_column' ){
-										get_template_part( 'template-parts/footer/footer-widget', 'four' );
-									} ?>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			<?php
 				endif;
 			endif;
