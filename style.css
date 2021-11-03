@@ -20,6 +20,11 @@ Gutener Education is based on Underscores https://underscores.me/, (C) 2012-2017
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
+/* VORES EGEN KODE */
+.gutentor-text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
