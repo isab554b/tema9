@@ -10,6 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Gutener Education
+ * hej mit navn er kaj
  */
 
 get_header();
