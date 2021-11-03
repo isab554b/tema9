@@ -35,7 +35,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 body {
   color: #333333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif, sans-serif;
 }
 
 h1,
@@ -45,8 +45,7 @@ h4,
 h5,
 h6 {
   color: #3a3a3a;
-  font-family: "Roboto", serif;
-  font-weight: 600;
+  font-family: "Anton", serif;
 }
 
 .wp-block-quote {
