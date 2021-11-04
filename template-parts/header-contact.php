@@ -5,6 +5,7 @@
  * @since Gutener 1.0.0
  */
 
+get_header();
 ?>
 
 <?php if( !get_theme_mod( 'disable_contact_detail', false ) ){ ?>
@@ -32,4 +33,4 @@
 			</li>
 		</ul>
 	</div>
-<?php } ?>
+<?php } get_footer(); ?>
