@@ -6,6 +6,7 @@
  *
  * @package Gutentor
  */
+get_header();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -27,7 +28,7 @@ while ( have_posts() ) :
 		comments_template();
 	}
 endwhile; // End of the loop.
-wp_footer();
+get_footer();
 ?>
 </body>
 </html>
