@@ -20,7 +20,7 @@ get_header();
 		<button onclick="goBack()">Tilbage</button>
 		<article>
              <h2 class="text"></h2>
-                <img class="image" src="" alt="">
+                <img class="image_single" src="" alt="">
 				<p class="lang_beskrivelse"></p>
                 <p class="fag"></p>
 				<p class="klassetrin"></p>
@@ -44,7 +44,7 @@ get_header();
 
     function visKurser() {
 	document.querySelector(".text").textContent = kursus.title.rendered;
- 	document.querySelector(".image").src = kursus.billede.guid;
+ 	document.querySelector(".image_single").src = kursus.billede.guid;
 	document.querySelector(".lang_beskrivelse").textContent = kursus.lang_beskrivelse;
     document.querySelector(".fag").textContent = `Fag: ${kursus.fag}`;
 	document.querySelector(".klassetrin").textContent = `Klassetrin: ${kursus.klassetrin}`;

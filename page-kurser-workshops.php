@@ -17,8 +17,8 @@ get_header();
 		<template>
   			<article class="kursus">
                 <h2></h2>
-                <img src="" alt="">
-				<p class="beskrivelse"></p>
+                <img class="image_loop"src="" alt="">
+				<!-- <p class="beskrivelse"></p> -->
                 <p class="fag"></p>
 				<p class="klassetrin"></p>
 				<p class="antal_deltagere"></p>
@@ -32,6 +32,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main">
+		<div class="heroimage">
+		 <h1 class="titel">Kurser & workshops</h1>
+		 </div>
         <nav id="filtrering"><button data-kursus="alle">Alle</button></nav>
         <section class="kursuscontainer">
         </section>
@@ -83,9 +86,9 @@ get_header();
 		if (filterKursus == "alle" || kursus.categories.includes(parseInt(filterKursus))){
     let klon = temp.cloneNode(true).content;
     klon.querySelector("h2").textContent = kursus.title.rendered;
- 	klon.querySelector("img").src = kursus.billede.guid;
-	  klon.querySelector(".beskrivelse").textContent = kursus.beskrivelse;
-    klon.querySelector(".fag").textContent = `Fag: ${kursus.fag}`;
+ 	klon.querySelector(".image_loop").src = kursus.billede.guid;
+	//   klon.querySelector(".beskrivelse").textContent = kursus.beskrivelse;
+    klon.querySelector(".fag").textContent = kursus.fag;
 	klon.querySelector(".klassetrin").textContent = `Klassetrin: ${kursus.klassetrin}`;
 	klon.querySelector(".antal_deltagere").textContent = `Antal deltagere: ${kursus.antal_deltagere}`;
 	klon.querySelector(".varighed").textContent = `Varighed: ${kursus.varighed}`;
