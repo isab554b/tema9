@@ -19,7 +19,7 @@ get_header();
                 <h2></h2>
                 <img src="" alt="">
 				<p class="beskrivelse"></p>
-                <p class="indhold"></p>
+                <p class="fag"></p>
 				<p class="klassetrin"></p>
 				<p class="antal_deltagere"></p>
 				<p class="varighed"></p>
@@ -85,7 +85,7 @@ get_header();
     klon.querySelector("h2").textContent = kursus.title.rendered;
  	klon.querySelector("img").src = kursus.billede.guid;
 	  klon.querySelector(".beskrivelse").textContent = kursus.beskrivelse;
-    klon.querySelector(".indhold").textContent = `Indhold: ${kursus.indhold}`;
+    klon.querySelector(".fag").textContent = `Fag: ${kursus.fag}`;
 	klon.querySelector(".klassetrin").textContent = `Klassetrin: ${kursus.klassetrin}`;
 	klon.querySelector(".antal_deltagere").textContent = `Antal deltagere: ${kursus.antal_deltagere}`;
 	klon.querySelector(".varighed").textContent = `Varighed: ${kursus.varighed}`;

@@ -1,39 +1,9 @@
 /* CSS DOCUMENT
 Theme Name: Ungdomsbyen Special
 Description: Stylish Childtheme
-Version: 1.0.1
+Version: 1.0.4
 Template: gutener
-Text Domain: gutener-education
-
 */
-
-/* VORES EGEN KODE */
-.section-g4801c4.gutentor-element-advanced-text .gutentor-text {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-}
-
-.main-navigation ul.menu li a,
-.slicknav_menu .slicknav_nav li a {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.5;
-  text-transform: none;
-}
-
-h2,
-h3,
-h4,
-p {
-  font-family: "Zen Kaku Gothic Antique", sans-serif;
-}
-
-section.kursuscontainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 35px;
-  margin: 2.5em;
-}
 
 /* CHILDTHEME KODE */
 .screen-reader-text {
@@ -146,4 +116,54 @@ section.kursuscontainer {
   font-weight: 600;
   line-height: 1.4;
   text-transform: uppercase;
+}
+
+/* EGEN KODE */
+/* FONTE */
+.section-g4801c4.gutentor-element-advanced-text .gutentor-text {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.main-navigation ul.menu li a,
+.slicknav_menu .slicknav_nav li a {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+section.kursuscontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 35px;
+  margin: 2.5em;
+}
+
+article.kursus {
+  background-color: #e3e3e3;
+}
+
+/* STYLING AF KNAPPER PÅ KURSER & WORKSHOPS */
+nav#filtrering {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.2em;
+  margin: 2em;
+}
+nav#filtrering button.filter {
+  cursor: pointer;
+  background-color: #f49843;
+  padding: 12px 25px 12px 25px;
+  border-radius: 3px 3px 3px 3px;
+  border: none;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: white;
 }

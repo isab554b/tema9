@@ -17,11 +17,12 @@ get_header();
 
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main">
+		<button onclick="goBack()">Tilbage</button>
 		<article>
              <h2 class="text"></h2>
                 <img class="image" src="" alt="">
 				<p class="lang_beskrivelse"></p>
-                <p class="indhold"></p>
+                <p class="fag"></p>
 				<p class="klassetrin"></p>
 				<p class="antal_deltagere"></p>
 				<p class="varighed"></p>
@@ -45,14 +46,17 @@ get_header();
 	document.querySelector(".text").textContent = kursus.title.rendered;
  	document.querySelector(".image").src = kursus.billede.guid;
 	document.querySelector(".lang_beskrivelse").textContent = kursus.lang_beskrivelse;
-    document.querySelector(".indhold").textContent = `Indhold: ${kursus.indhold}`;
+    document.querySelector(".fag").textContent = `Fag: ${kursus.fag}`;
 	document.querySelector(".klassetrin").textContent = `Klassetrin: ${kursus.klassetrin}`;
 	document.querySelector(".antal_deltagere").textContent = `Antal deltagere: ${kursus.antal_deltagere}`;
 	document.querySelector(".varighed").textContent = `Varighed: ${kursus.varighed}`;
     document.querySelector(".pris").textContent = `Pris: ${kursus.pris}`;
+	
 } 
 
-
+function goBack() {
+  window.history.back();
+}
     getJson();
 
 </script>
