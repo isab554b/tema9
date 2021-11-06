@@ -19,7 +19,9 @@ get_header();
                 <h2></h2>
                 <img class="image_loop"src="" alt="">
 				<!-- <p class="beskrivelse"></p> -->
+				<div class="flex">
                 <p class="fag"></p>
+				</div>
 				<p class="klassetrin"></p>
 				<p class="antal_deltagere"></p>
 				<p class="varighed"></p>

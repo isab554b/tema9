@@ -1,7 +1,7 @@
 /* CSS DOCUMENT
 Theme Name: Ungdomsbyen Special
 Description: Stylish Childtheme
-Version: 1.0.4
+Version: 1.0.5
 Template: gutener
 */
 
@@ -156,7 +156,7 @@ article.kursus h2 {
 
 article.kursus p {
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 article.kursus p.fag {
@@ -181,6 +181,10 @@ article.kursus {
   flex-direction: column;
 }
 
+article.kursus .flex {
+  align-self: flex-end;
+}
+
 /* STYLING AF KNAPPER PÅ KURSER & WORKSHOPS */
 nav#filtrering {
   display: flex;
@@ -189,7 +193,8 @@ nav#filtrering {
   gap: 20px;
 }
 nav#filtrering button.filter,
-nav#filtrering button {
+nav#filtrering button,
+button {
   cursor: pointer;
   background-color: #f49843;
   padding: 12px 25px 12px 25px;
