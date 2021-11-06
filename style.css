@@ -181,7 +181,7 @@ article.kursus {
   flex-direction: column;
 }
 
-article.kursus .flex {
+.flex {
   align-self: flex-end;
 }
 
