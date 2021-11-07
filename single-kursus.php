@@ -21,6 +21,7 @@ get_header();
 		 <h1 class="titel">Kurser & workshops</h1>
 		 </div>
 		<button onclick="goBack()">Tilbage</button>
+		<section class="kursus_forms_container">
 		<article class="single_kursus">
              <h2 class="text"></h2>
                 <img class="image_single" src="" alt="">
@@ -33,7 +34,41 @@ get_header();
 				<p class="varighed"></p>
                 <p class="pris"></p>
             </article>
-        
+    
+		<section class="bookingfunktion">
+	<h2>Book kursus eller workshop nu</h2>
+	<form action="booking" method="post">
+      <div class="elem-group">
+        <label for="navn">Navn</label>
+        <input type="text" id="navn" required />
+      </div>
+      <div class="elem-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="elem-group">
+        <label for="telefon">Telefonnummer</label>
+        <input type="tel" id="telefon" required />
+      </div>
+
+      <div class="elem-group inlined">
+        <label for="klassetrin">Klassetrin</label>
+        <input type="number" id="klassetrin" min="1" required />
+      </div>
+      <div class="elem-group inlined">
+        <label for="elever">Antal elever</label>
+        <input type="number" id="elever" min="4" max="10" required />
+      </div>
+      <div class="elem-group inlined">
+        <label for="dato">Dato</label>
+        <input type="date" id="dato" required />
+      </div>
+      <div class="button-group">
+        <button class="button_form" type="book">Book nu</button>
+      </div>
+    </form>
+	</section>
+	</section>
 
 		</main>
  <script>

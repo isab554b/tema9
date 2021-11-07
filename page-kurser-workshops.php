@@ -37,7 +37,7 @@ get_header();
 		<div class="heroimage">
 		 <h1 class="titel">Kurser & workshops</h1>
 		 </div>
-        <nav id="filtrering"><button data-kursus="alle">Alle</button></nav>
+        <nav id="filtrering"><button data-kursus="alle" >Alle</button></nav>
         <section class="kursuscontainer">
         </section>
         </main>

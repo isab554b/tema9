@@ -155,6 +155,12 @@ article.single_kursus h2 {
   text-transform: uppercase;
 }
 
+section.bookingfunktion h2 {
+  font-family: "Anton", sans-serif;
+  color: #f49843;
+  text-transform: uppercase;
+}
+
 article.kursus p {
   color: black;
   font-weight: 400;
@@ -172,8 +178,15 @@ section.kursuscontainer {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 35px;
   margin: 50px 100px 50px 100px;
+  padding: 20px;
 }
 
+.kursus_forms_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 200px;
+  margin: 50px 100px 50px 100px;
+}
 article.kursus {
   cursor: pointer;
   background-color: #e3e3e3;
@@ -200,8 +213,6 @@ article.single_kursus {
   width: 45vw;
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
-  padding: 12px;
 }
 
 /* STYLING AF KNAPPER PÅ KURSER & WORKSHOPS */
@@ -248,6 +259,62 @@ nav#filtrering button a:active {
 /* HOVER PÅ IMG PÅ LOOPVIEW */
 .image_loop:hover {
   opacity: 0.5;
+}
+
+/* FORMS */
+section.bookingfunktion {
+  background-color: #72bf98;
+  border-radius: 3px 3px 3px 3px;
+  padding: 25px 25px 0px 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+div.elem-group {
+  margin: 15px 0;
+  width: 60%;
+}
+
+div.elem-group.inlined {
+  width: 30%;
+}
+
+label {
+  display: block;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: normal;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px 5px 5px 5px;
+  color: #111111;
+  box-sizing: border-box;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  height: 250px;
+}
+
+.button_form {
+  background-color: #f49843;
+  padding: 12px 25px 12px 25px;
+  border-radius: 3px 3px 3px 3px;
+  border: none;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.button_form:hover {
+  background-color: #e3e3e3;
+  color: black;
 }
 
 /* MEDIAQUERRIES */
