@@ -17,12 +17,17 @@ get_header();
 
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main">
+		<div class="heroimage_single">
+		 <h1 class="titel">Kurser & workshops</h1>
+		 </div>
 		<button onclick="goBack()">Tilbage</button>
-		<article>
+		<article class="single_kursus">
              <h2 class="text"></h2>
                 <img class="image_single" src="" alt="">
-				<p class="lang_beskrivelse"></p>
+				<div class="flex_single">
                 <p class="fag"></p>
+				</div>
+				<p class="lang_beskrivelse"></p>
 				<p class="klassetrin"></p>
 				<p class="antal_deltagere"></p>
 				<p class="varighed"></p>
@@ -46,7 +51,7 @@ get_header();
 	document.querySelector(".text").textContent = kursus.title.rendered;
  	document.querySelector(".image_single").src = kursus.billede.guid;
 	document.querySelector(".lang_beskrivelse").textContent = kursus.lang_beskrivelse;
-    document.querySelector(".fag").textContent = `Fag: ${kursus.fag}`;
+    document.querySelector(".fag").textContent = kursus.fag;
 	document.querySelector(".klassetrin").textContent = `Klassetrin: ${kursus.klassetrin}`;
 	document.querySelector(".antal_deltagere").textContent = `Antal deltagere: ${kursus.antal_deltagere}`;
 	document.querySelector(".varighed").textContent = `Varighed: ${kursus.varighed}`;

@@ -148,7 +148,8 @@ h1.titel {
   letter-spacing: 2px;
 }
 
-article.kursus h2 {
+article.kursus h2,
+article.single_kursus h2 {
   font-family: "Anton", sans-serif;
   color: #72bf98;
   text-transform: uppercase;
@@ -159,12 +160,13 @@ article.kursus p {
   font-weight: 400;
 }
 
-article.kursus p.fag {
+article.kursus p.fag,
+article.single_kursus p.fag {
   font-family: "Anton", sans-serif;
   color: #ed6da6;
 }
 
-/* PLACERING AF KURSUSCONTAINER & ARTICLE*/
+/* PLACERING & STYLING AF KURSUSCONTAINER & ARTICLE*/
 section.kursuscontainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -181,8 +183,25 @@ article.kursus {
   flex-direction: column;
 }
 
-.flex {
+article.single_kursus {
+  background-color: #e3e3e3;
+  border-radius: 3px 3px 3px 3px;
+  padding: 25px 25px 0px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex,
+.flex_single {
   align-self: flex-end;
+}
+
+article.single_kursus {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding: 12px;
 }
 
 /* STYLING AF KNAPPER PÅ KURSER & WORKSHOPS */
@@ -205,19 +224,21 @@ button {
 }
 
 nav#filtrering button.filter:hover,
-nav#filtrering button:hover {
+nav#filtrering button:hover,
+button:hover {
   color: black;
   background-color: #e3e3e3;
 }
 
-/* nav#filtrering button.filter a:active,
+nav#filtrering button.filter a:active,
 nav#filtrering button a:active {
   color: black;
   background-color: #e3e3e3;
-} */
+}
 
 /* HEROIMAGE PÅ KURSER & WORKSHOPS */
-.heroimage {
+.heroimage,
+.heroimage_single {
   background-image: url("img/heroimage.jpg");
   height: 300px;
   background-repeat: no-repeat;
@@ -227,4 +248,11 @@ nav#filtrering button a:active {
 /* HOVER PÅ IMG PÅ LOOPVIEW */
 .image_loop:hover {
   opacity: 0.5;
+}
+
+/* MEDIAQUERRIES */
+@media only screen and (max-width: 1000px) {
+  article.single_kursus {
+    width: 400px;
+  }
 }
