@@ -324,12 +324,6 @@ textarea {
 }
 
 /* MEDIAQUERRIES */
-@media only screen and (max-width: 1000px) {
-  article.single_kursus {
-    width: 400px;
-  }
-}
-
 @media only screen and (max-width: 775px) {
   section.kursuscontainer {
     margin: 0;
@@ -337,5 +331,13 @@ textarea {
 
   h1.titel {
     padding: 120px 20px;
+  }
+  article.single_kursus {
+    width: auto;
+  }
+
+  section.kursus_forms_container {
+    gap: 0px;
+    margin: 20px 20px 20px 20px;
   }
 }
