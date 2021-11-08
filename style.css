@@ -189,7 +189,7 @@ section.kursus_forms_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 200px;
-  margin: 50px 100px 50px 100px;
+  margin: 25px 100px 50px 100px;
 }
 article.kursus {
   cursor: pointer;
@@ -253,6 +253,12 @@ nav#filtrering button a:active {
   background-color: #e3e3e3;
 }
 
+div.goback_button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 100px 0 0;
+}
+
 /* HEROIMAGE PÅ KURSER & WORKSHOPS */
 .heroimage,
 .heroimage_single {
@@ -294,6 +300,7 @@ label {
   display: block;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   font-weight: normal;
+  color: white;
 }
 
 input,
@@ -327,10 +334,14 @@ textarea {
 }
 
 /* MEDIAQUERRIES */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   section.kursus_forms_container {
     gap: 0px;
     margin: 20px 20px 20px 20px;
+  }
+
+  div.goback_button {
+    margin: 25px 20px 0 0;
   }
 }
 

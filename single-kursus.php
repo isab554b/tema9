@@ -20,7 +20,9 @@ get_header();
 		<div class="heroimage_single">
 		 <h1 class="titel">Kurser & workshops</h1>
 		 </div>
+     <div class="goback_button">
 		<button onclick="goBack()">Tilbage</button>
+    </div>
 		<section class="kursus_forms_container">
 		<article class="single_kursus">
              <h2 class="text"></h2>
