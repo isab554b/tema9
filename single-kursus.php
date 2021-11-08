@@ -29,10 +29,10 @@ get_header();
                 <p class="fag"></p>
 				</div>
 				<p class="lang_beskrivelse"></p>
-				<p class="klassetrin"></p>
-				<p class="antal_deltagere"></p>
-				<p class="varighed"></p>
-                <p class="pris"></p>
+				<p class="klassetrin"><b></b></p>
+				<p class="antal_deltagere"><b></b></p>
+				<p class="varighed"><b></b></p>
+                <p class="pris"><b></b></p>
             </article>
     
 		<section class="bookingfunktion">
