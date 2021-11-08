@@ -22,10 +22,10 @@ get_header();
 				<div class="flex">
                 <p class="fag"></p>
 				</div>
-				<p class="klassetrin"><b></b></p>
-				<p class="antal_deltagere"><b></b></p>
-				<p class="varighed"><b></b></p>
-                <p class="pris"><b></b></p>
+				<p class="klassetrin"></p>
+				<p class="antal_deltagere"></p>
+				<p class="varighed"></p>
+                <p class="pris"></p>
         	</article>
         </template>
 
@@ -35,7 +35,7 @@ get_header();
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<div class="heroimage">
-		 <h1 class="titel">Kurser & workshops</h1>
+		 <h1 class="titel">Læringsområder</h1>
 		 </div>
         <nav id="filtrering">
 			<button data-kursus="alle" >Alle</button>
@@ -49,7 +49,7 @@ get_header();
 	 let filterKursus = "alle";
 
     const dbUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/kursus?per_page=100";
-	const catUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/categories?slug=efterskoler,grundskoler,kommuner,undervisere-ledere,ungdomsuddannelser";
+	const catUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/categories?slug=fns-17-verdensmal,forsta-lgbt,god-til-konfliktloesning,hvad-er-demokrati,hvad-skal-jeg-vaere,laer-om-okonomi";
      
 
     async function getJson() {
