@@ -280,17 +280,20 @@ section.bookingfunktion {
   padding: 25px 25px 0px 25px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
 div.elem-group {
-  margin: 15px 0;
-  width: 100%;
+  margin: 20px 0;
 }
 
 div.elem-group.inlined {
-  width: 45%;
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
 }
 
 label {
@@ -330,6 +333,13 @@ textarea {
 }
 
 /* MEDIAQUERRIES */
+@media only screen and (max-width: 1000px) {
+  section.kursus_forms_container {
+    gap: 0px;
+    margin: 20px 20px 20px 20px;
+  }
+}
+
 @media only screen and (max-width: 775px) {
   section.kursuscontainer {
     margin: 0;
@@ -340,10 +350,5 @@ textarea {
   }
   article.single_kursus {
     width: auto;
-  }
-
-  section.kursus_forms_container {
-    gap: 0px;
-    margin: 20px 20px 20px 20px;
   }
 }

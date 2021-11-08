@@ -37,32 +37,37 @@ get_header();
     
 		<section class="bookingfunktion">
 	<h2>Book kursus eller workshop nu</h2>
-	<form action="booking" method="post">
-      <div class="elem-group">
-        <label for="navn">Navn</label>
-        <input type="text" id="navn" required />
-      </div>
-      <div class="elem-group">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" required />
-      </div>
-      <div class="elem-group">
-        <label for="telefon">Telefonnummer</label>
-        <input type="tel" id="telefon" required />
-      </div>
+<form action="booking" method="post">
+  <div class="elem-group">
+    <label for="navn">Navn</label>
+    <input type="text" id="name" required>
+  </div>
+  <div class="elem-group">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" required>
+  </div>
+  <div class="elem-group">
+    <label for="telefonnumer">Telefonnummer</label>
+    <input type="tel" id="phone" required>
+  </div>
+ 
+  <div class="elem-group inlined">
+    <label for="lærere">Antal lærere</label>
+    <input type="number" id="lærere" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="elever">Antal elever</label>
+    <input type="number" id="elever" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Klassetrin</label>
+    <input type="number" id="klassetrin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Dato</label>
+    <input type="date" id="dato" required>
+  </div>
 
-      <div class="elem-group inlined">
-        <label for="klassetrin">Klassetrin</label>
-        <input type="number" id="klassetrin" min="1" required />
-      </div>
-      <div class="elem-group inlined">
-        <label for="elever">Antal elever</label>
-        <input type="number" id="elever" min="4" max="10" required />
-      </div>
-      <div class="elem-group inlined">
-        <label for="dato">Dato</label>
-        <input type="date" id="dato" required />
-      </div>
       <div class="button-group">
         <button class="button_form" type="book">Book nu</button>
       </div>
