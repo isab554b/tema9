@@ -133,7 +133,11 @@ Template: gutener
   text-transform: none;
 }
 
-h2,
+h2 {
+  font-family: "Anton", sans-serif;
+  color: #f49843;
+}
+
 h3,
 h4,
 p {
@@ -157,7 +161,7 @@ article.single_kursus h2 {
 
 section.bookingfunktion h2 {
   font-family: "Anton", sans-serif;
-  color: #f49843;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -181,7 +185,7 @@ section.kursuscontainer {
   padding: 20px;
 }
 
-.kursus_forms_container {
+section.kursus_forms_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 200px;
@@ -221,6 +225,8 @@ nav#filtrering {
   justify-content: center;
   margin: 30px;
   gap: 20px;
+  overflow-x: auto;
+  flex-wrap: wrap;
 }
 nav#filtrering button.filter,
 nav#filtrering button,
@@ -274,11 +280,11 @@ form {
 }
 div.elem-group {
   margin: 15px 0;
-  width: 60%;
+  width: 100%;
 }
 
 div.elem-group.inlined {
-  width: 30%;
+  width: 45%;
 }
 
 label {
@@ -321,5 +327,15 @@ textarea {
 @media only screen and (max-width: 1000px) {
   article.single_kursus {
     width: 400px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  section.kursuscontainer {
+    margin: 0;
+  }
+
+  h1.titel {
+    padding: 120px 20px;
   }
 }
