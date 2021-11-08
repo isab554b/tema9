@@ -143,7 +143,7 @@ h1.titel {
 }
 
 h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
   color: #f49843;
 }
 
@@ -297,9 +297,7 @@ div.elem-group {
 }
 
 div.elem-group.inlined {
-  width: 49%;
   display: inline-block;
-  margin-left: 1%;
 }
 
 div.elem-group.inlined input {
