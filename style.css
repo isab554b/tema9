@@ -177,6 +177,10 @@ article.single_kursus p.fag {
   color: #ed6da6;
 }
 
+p.fag {
+  font-size: 1.1rem;
+}
+
 /* PLACERING & STYLING AF KURSUSCONTAINER & ARTICLE*/
 section.kursuscontainer {
   display: grid;
