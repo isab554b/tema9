@@ -220,7 +220,7 @@ article.single_kursus {
   flex-direction: column;
 }
 
-/* STYLING AF KNAPPER PÅ KURSER & WORKSHOPS */
+/* STYLING & PLACERING AF KNAPPER */
 nav#filtrering {
   display: flex;
   justify-content: center;
@@ -248,15 +248,16 @@ button:hover {
   background-color: #e3e3e3;
 }
 
-/* a:active {
-  color: black;
-  background-color: #e3e3e3;
-} */
-
 div.goback_button {
   display: flex;
   justify-content: flex-end;
   margin: 25px 100px 0 0;
+}
+
+div.button-group {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* HEROIMAGE PÅ KURSER & WORKSHOPS */

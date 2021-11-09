@@ -25,7 +25,7 @@ get_header();
 				<p class="klassetrin"></p>
 				<p class="antal_deltagere"></p>
 				<p class="varighed"></p>
-                <p class="pris"><b>Pris:</b></p>
+                <p class="pris"></p>
         	</article>
         </template>
 
