@@ -170,6 +170,10 @@ article.kursus p {
   font-weight: 400;
 }
 
+p {
+  margin: 0 0 10px;
+}
+
 article.kursus p.fag,
 article.single_kursus p.fag {
   font-family: "Anton", sans-serif;
