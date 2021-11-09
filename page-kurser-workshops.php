@@ -49,7 +49,7 @@ get_header();
 	 let filterKursus = "alle";
 
     const dbUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/kursus?per_page=100";
-	const catUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/categories?slug=efterskoler,grundskoler,kommuner,undervisere-ledere,ungdomsuddannelser";
+	const catUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/categories?slug=efterskoler,grundskoler,kommuner,undervisere-ledere,ungdomsuddannelser,online-kurser-workshops";
      
 
     async function getJson() {

@@ -136,8 +136,8 @@ Template: gutener
 h1.titel {
   padding: 100px;
   font-family: "Anton", sans-serif;
-  color: #f49843;
-  font-size: 50px;
+  color: white;
+  font-size: 80px;
   letter-spacing: 2px;
 }
 
@@ -354,6 +354,10 @@ textarea {
 
   div.goback_button {
     margin: 25px 20px 0 0;
+  }
+
+  h1.titel {
+    font-size: 50px;
   }
 }
 
