@@ -39,14 +39,14 @@ get_header();
 		 </div>
         <nav id="filtrering">
 			<button data-kursus="alle" >Alle</button>
-	</nav>
+		</nav>
         <section class="kursuscontainer">
         </section>
         </main>
  <script>
      let kurser;
 	 let categories;
-	 let filterKursus = "alle";
+	 
 
     const dbUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/kursus?per_page=100";
 	const catUrl = "https://isahilarius.dk/kea/09_cms/ungdomsbyen/wp-json/wp/v2/categories?slug=efterskoler,grundskoler,kommuner,undervisere-ledere,ungdomsuddannelser,online-kurser-workshops";
@@ -75,6 +75,8 @@ get_header();
 	})
 	}
 
+	let filterKursus = "alle";
+	
 	function filtrering(){
 		filterKursus = this.dataset.kursus;
 		console.log(filterKursus);
