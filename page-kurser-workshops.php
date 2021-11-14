@@ -93,7 +93,6 @@ get_header();
     let klon = temp.cloneNode(true).content;
     klon.querySelector("h2").textContent = kursus.title.rendered;
  	klon.querySelector(".image_loop").src = kursus.billede.guid;
-	//   klon.querySelector(".beskrivelse").textContent = kursus.beskrivelse;
     klon.querySelector(".fag").textContent = kursus.fag;
 	klon.querySelector(".klassetrin").textContent = `Klassetrin: ${kursus.klassetrin}`;
 	klon.querySelector(".antal_deltagere").textContent = `Antal deltagere: ${kursus.antal_deltagere}`;
