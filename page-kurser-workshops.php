@@ -37,13 +37,51 @@ get_header();
 		<div class="heroimage">
 		 <h1 class="titel">Kurser & workshops</h1>
 		 </div>
+		
         <nav id="filtrering">
-			<button data-kursus="alle" >Alle</button>
+			 <button id="menuknap">☰
+			 <ul id="menu" class="hidden">
+				 <li><button data-kursus="alle" >Alle</button></li>
+			 </ul>
+			 </button>
 		</nav>
+		
         <section class="kursuscontainer">
         </section>
         </main>
  <script>
+
+
+// lytter efter når siden er loaded
+window.addEventListener("load", sidenVises);
+
+// når siden er loaded viser den menuknappen og gør den klikbar
+function sidenVises() {
+console.log("sidenVises");
+document
+.querySelector("#menuknap")
+.addEventListener("click", toggleMenu);
+}
+
+// når man klikker på menuknap lytter den efter funktionen toggle
+function toggleMenu() {
+console.log("toggleMenu");
+
+// toggle = når toggle er aktiv og der trykkes på menuknappen bliver .hidden aktiveret på #menu og den "forsvinder",
+// og hvis .hidden er på #menu når der trykkes på menuknappen bliver den vist igen da .hidden fjernes
+document.querySelector("#menu").classList.toggle("hidden");
+let erSkjult = document
+.querySelector("#menu")
+.classList.contains("hidden");
+
+// hvis det er sandt at .hidden er aktiv vises "☰" og hvis .hidden ikke er aktiv og menuen bliver set vises "x".
+if (erSkjult == true) {
+document.querySelector("#menuknap").textContent = "☰";
+} else {
+document.querySelector("#menuknap").textContent = "x";
+}
+}
+
      let kurser;
 	 let categories;
 	 
@@ -64,13 +102,13 @@ get_header();
 
 	function opretKnapper() {
 		categories.forEach(cat =>{ 
-		document.querySelector("#filtrering").innerHTML += `<button class="filter" data-kursus="${cat.id}">${cat.name}</button>`
+		document.querySelector("#menu").innerHTML += `<button class="filter" data-kursus="${cat.id}">${cat.name}</button>`
 		})
 		addEventListenersToButtons();
 	}
 
 	function addEventListenersToButtons() {
-	document.querySelectorAll("#filtrering button").forEach(elm =>{
+	document.querySelectorAll("#menu button").forEach(elm =>{
 		elm.addEventListener("click", filtrering);
 	})
 	}
