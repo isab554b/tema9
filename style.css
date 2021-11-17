@@ -369,8 +369,8 @@ textarea {
 
 @media only screen and (max-width: 775px) {
   h1.titel {
-    padding: 73px 15px;
-    font-size: 50px;
+    padding: 74px 15px;
+    font-size: 40px;
   }
   article.single_kursus {
     width: auto;
@@ -392,7 +392,7 @@ textarea {
   }
 
   .heroimage {
-    height: 215px;
+    height: 204px;
     background-position: top center;
   }
 }
