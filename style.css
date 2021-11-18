@@ -161,6 +161,10 @@ article.single_kursus h2 {
   letter-spacing: 0.5px;
 }
 
+article.single_kursus h2 {
+  font-size: 30px;
+}
+
 section.bookingfunktion h2 {
   font-family: "Anton", sans-serif;
   color: white;
